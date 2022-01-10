@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/venera_nav"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.tree.Venera.fragment_home_venera"
+        android:label="fragment_home_venera"
+        tools:layout="@layout/fragment_home_venera" />
+    <fragment
+        android:id="@+id/fragment_else"
+        android:name="com.example.tree.Venera.fragment_else_venera"
+        android:label="fragment_else_venera"
+        tools:layout="@layout/fragment_else_venera" />
+</navigation>

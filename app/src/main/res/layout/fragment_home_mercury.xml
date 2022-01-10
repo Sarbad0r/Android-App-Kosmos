@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MercuryFragment.HomeFragment"
+    android:background="@color/black"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/placeForImages">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           tools:ignore="UselessParent">
+
+           <ImageSwitcher
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/image_mercury_switcher"/>
+       </LinearLayout>
+   </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_place"
+        android:layout_below="@+id/placeForImages">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+            <Button
+                android:id="@+id/btn_pre_mercury"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="@string/previews"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/btn_next_mercury"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="@string/next"
+                style="?android:attr/buttonBarButtonStyle"/>
+        </LinearLayout>
+    </FrameLayout>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/button_place">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/text_1_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/mercury_about_1"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/text_2_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/mercury_about_2"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
+</RelativeLayout>

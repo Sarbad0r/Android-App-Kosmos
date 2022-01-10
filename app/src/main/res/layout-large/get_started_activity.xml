@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/black_fone"
+        android:scaleType="centerCrop"/>
+
+    <VideoView
+        android:id="@+id/videoKosmos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="200dp"
+        >
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="522dp"
+            android:layout_height="161dp"
+            android:text="@string/welcome"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+
+            />
+        <Button
+            android:id="@+id/getStarted"
+            android:layout_width="274dp"
+            android:layout_height="80dp"
+            android:text="@string/get_started"
+            android:textSize="20sp"
+            app:layout_constraintVertical_bias="0.894" />
+    </LinearLayout>
+
+</RelativeLayout>
