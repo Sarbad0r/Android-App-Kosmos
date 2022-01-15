@@ -193,7 +193,8 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_marginBottom="-30dp"
-                tools:ignore="UseCompoundDrawables">
+                tools:ignore="UseCompoundDrawables"
+                android:id="@+id/ImageUranus">
 
                 <TextView
                     android:id="@+id/textView7"

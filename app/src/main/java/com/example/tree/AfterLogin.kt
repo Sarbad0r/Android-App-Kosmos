@@ -12,6 +12,7 @@ import com.example.tree.Jupiter.JupiterActivity
 import com.example.tree.Mars.MarsActivity
 import com.example.tree.MercuryFragment.MercuryActivity
 import com.example.tree.Saturn.SaturnActivity
+import com.example.tree.Uranus.UranusActivity
 import com.example.tree.Venera.VeneraActivity
 
 class AfterLogin:AppCompatActivity() {
@@ -88,6 +89,14 @@ class AfterLogin:AppCompatActivity() {
             }
             catch (e:Exception){}
 
+        }
+        val ImageUranus : LinearLayout = findViewById(R.id.ImageUranus)
+            ImageUranus.setOnClickListener{
+                try {
+                    val intent = Intent(this@AfterLogin, UranusActivity::class.java)
+                    startActivity(intent)
+                }
+                catch (e:Exception){}
         }
 
 
